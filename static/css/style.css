@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family = Merriweather: wght @ 300 & display = swap');
+
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: #EFF7F6;
+}
+
+nav#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+  #menu {
+border-bottom: 1.5px #CDDDDD solid;
+}
+
+nav#menu li {
+  display: inline-block;
+  font-size: 14pt;
+  background-color: #cddd;
+  
+  
+}
