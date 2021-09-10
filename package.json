@@ -1,0 +1,25 @@
+{
+  "name": "desafio-frontend",
+  "version": "1.0.0",
+  "description": "Este documento descreve o desafio que será utilizado para avaliar os candidatos à vagas de frontend na Inforce. Caso você tenha chegado aqui por acaso, sinta-se à vontade em realizar o teste, e logo após, contar um pouco mais sobre você através do formulário de RH do nosso site (http://inforce.com.br/rh).",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagosilva2/desafio-frontend.git"
+  },
+  "author": "Thiago Silva <teagapk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagosilva2/desafio-frontend/issues"
+  },
+  "homepage": "https://github.com/thiagosilva2/desafio-frontend#readme"
+}
