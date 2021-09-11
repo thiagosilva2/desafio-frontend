@@ -36,11 +36,38 @@ body{
   color: rgba(0, 0,0 , 1);
  
 }
+/* CONFIGURAR O H1
+h1 {
+
+} */
+
+/* ===========slide ========= */
+
+.slide {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+.slide li {
+  list-style: none;
+  position: absolute;
+}
+.slide img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
 
 #logotopo {
   display: block;
   float: none;
   margin-left: 50px;
+  
 }
 
 div#interface {
@@ -103,7 +130,7 @@ nav#menu ul{
   
   display: block;
   text-transform: uppercase;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 500px;
      
@@ -129,10 +156,11 @@ a {
 }
 /* =================MENU FECHA MENU ================= */
 #banner {
-  position: relative;
+  display: block;
   width: 550px;
   height: 280px;
   border: 1px solid black;
+  align-items: center;
 }
 
 /* =================RODA PÉ ================= */
