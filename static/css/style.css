@@ -1,31 +1,145 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2? family = Merriweather: wght @ 300 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+font-family {
+  font-family: 'FontePagina';
+  src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+}
 
 
 * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+/* =============================CORPO =================== */
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+ 
+  background-color: #fff4f6;
+  font-family: 'FontePagina';
+  text-align: justify;
+  margin-left: 20px;
+  color: rgba(0, 0,0 , 1);
+ 
 }
 
-body {
-  background-color: #EFF7F6;
+#logotopo {
+  margin-top: 10px;
+  display: block;
+  float: none;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
-nav#menu a {
-  color: black;
-  text-decoration: none;
+div#interface {
+  width: 1050px;
+  height: 1300px;
+  background-color: #ffff;
+  margin: 10px auto 5px auto;
+  
+  
 }
 
-  #menu {
-border-bottom: 1.5px #CDDDDD solid;
+header {
+  border-bottom: 2px #2a9c52 solid;
+  
+  
+}
+/* =====================CORPO/CABEÇALHO =================== */
+
+section#imovel {
+text-align: center;
+margin-top: 50px;
+
 }
 
+div.container {
+  display: block;
+  float: initial;
+  columns: 3;
+}
+
+/* =======================CALL ACTION MEIO DA PÁGINA BOTÃO ================= */
+#call-to-action {
+  width: 100%;
+  margin: 30px 0px 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+/* =================MENU ================= */
+
+#menu {
+  background-color: #adebbb;
+  
+  }
+
+nav#menu ul{
+  
+  display: block;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 500px;
+     
+}
 nav#menu li {
   display: inline-block;
-  font-size: 14pt;
-  background-color: #cddd;
-  
-  
+  font-size: 18pt;
+  margin-right: 10px;
+   
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 5s;
+
+}
+a {
+  text-decoration: none;
+  color: black;
+  background: #adebbb;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* =================MENU FECHA MENU ================= */
+#banner {
+  position: relative;
+  width: 550px;
+  height: 280px;
+  border: 1px solid black;
+}
+
+/* =================RODA PÉ ================= */
+#rodape {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+
+#logoFooter {
+  max-width: 100%;
+  height: auto;
+}
+
+
+footer li {
+ list-style-type: none;
 }
