@@ -21,49 +21,77 @@
           </ul>
         </nav>
       </header>
-      <h1>Melhores imóveis do Rio de Janeiro!</h1>
+      <div id="titulo"><h1>Melhores imóveis do Rio de Janeiro!</h1></div>
+      
       <figure>
         <ul class="slide">
           <li>
             <input type="radio" id="slide1" name="slide" checked />
-            <label for="slide1"></label>
-            <img id="banner" src="../static/img/banner1.jpg" />
+            <label id="botao" for="slide1"></label>
+            <img id="banner" src="../static/img/banner4.jpg" />
           </li>
           <li>
             <input type="radio" id="slide2" name="slide" checked />
-            <label for="slide2"></label>
-            <img id="banner" src="../static/img/banner2.jpg" />
-          </li>
-          <li>
-            <input type="radio" id="slide3" name="slide" checked />
-            <label for="slide3"></label>
+            <label id="botao" for="slide2"></label>
             <img id="banner" src="../static/img/banner3.jpg" />
           </li>
           <li>
+            <input type="radio" id="slide3" name="slide" checked />
+            <label id="botao" for="slide3"></label>
+            <img id="banner" src="../static/img/banner2.jpg" />
+          </li>
+          <li>
             <input type="radio" id="slide4" name="slide" checked />
-            <label for="slide4"></label>
-            <img id="banner" src="../static/img/banner4.jpg" />
+            <label id="botao" for="slide4"></label>
+            <img id="banner" src="../static/img/banner1.jpg" />
           </li>
         </ul>
-
-        <button>botão</button>
       </figure>
 
-      <h2>"Venha conhecer a Imobiliária Inforce."</h2>
+    <div id="titulo"> 
+      <h1>Venha conhecer a Imobiliária Inforce.</h1>
+      <h2>Vitrines de Imóveis</h2>
+    </div>
 
-      <section id="banner1"></section>
+      <ul id="slider">
 
-      <section id="imovel">
-        <h2>Vitrines de Imóveis</h2>
-        <div class="container" id="imoveis-container">
+        <li> 
+          <input type="radio" id="slider1" name="slider" checked>
+          <label id="button" for="slider1"></label> 
           <img src="../static/img/imovel1.jpg" />
-          <img src="../static/img/imovel2.jpg" />
-          <img src="../static/img/imovel3.jpg" />
-          <img src="../static/img/imovel4.jpg" />
-          <img src="../static/img/imovel5.jpg" />
-          <img src="../static/img/imovel6.jpg" />
-        </div>
-      </section>
+        </li>
+
+      <li>
+        <input type="radio" id="slider2" name="slider" checked>
+        <label id="button" for="slider2"></label> 
+        <img src="../static/img/imovel2.jpg" />  
+      </li>
+
+      <li>
+        <input type="radio" id="slider3" name="slider" checked>
+        <label id="button" for="slider3"></label> 
+        <img src="../static/img/imovel3.jpg" />
+     </li>
+
+      <li>
+        <input type="radio" id="slider4" name="slider" checked>
+        <label id="button" for="slider4"></label> 
+        <img src="../static/img/imovel4.jpg" />
+      </li>
+
+      <li>
+        <input type="radio" id="slider5" name="slider" checked>
+        <label id="button" for="slider5"></label> 
+        <img src="../static/img/imovel5.jpg" />
+              </li>
+
+              <li>
+                <input type="radio" id="slider6" name="slider" checked>
+                <label id="button" for="slider6"></label> 
+                <img src="../static/img/imovel6.jpg" />
+              </li>
+    </ul>
+      </div>
 
       <section id="call-to-action">
         <div>
@@ -119,5 +147,5 @@
         </li>
       </footer>
     </div>
-  </body>
+    </body>
 </html>

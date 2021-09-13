@@ -29,27 +29,53 @@ html {
 
 }
 body{
- 
-  background-color: #fff;
+ background-color: #fff;
   font-family: 'Merriweather';
-  text-align: justify;
-  color: rgba(0, 0,0 , 1);
+ color: rgba(0, 0,0 , 1);
+ width: 1300px;
+ height: 600px;
+
+    
+  
+}
+
+div#interface {
+  background-color: #ffff;
+  margin: -18px;
+  padding: 20px;
  
 }
-/* CONFIGURAR O H1
-h1 {
 
-} */
+#logotopo {
+  display: block;
+  float: none;
+  margin-left: 50px;
+}
+
+
+header {
+  background-color: #60D394;
+  border-bottom: 2px rgba(0, 0,0 , 6) solid;
+  padding: 5px;
+}
+
+#titulo  {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+ 
+  } 
 
 /* ===========slide ========= */
+
 
 .slide {
   display: block;
   height: 293px;
   width: 600px;
   margin: auto;
-  margin-top: 20px;
-  position: relative;
+  margin-top: 10px;
+  position: relative; 
 }
 .slide li {
   list-style: none;
@@ -60,54 +86,197 @@ h1 {
   height: 100%;
   width: 100%;
   vertical-align: top;
+  align-items: center;
 }
-
-
-#logotopo {
+.slide input {
+  display: none;
+}
+.slide label {
+  background-color: black;
+  bottom: -20px;
+  cursor: pointer;
   display: block;
-  float: none;
-  margin-left: 50px;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+  margin-left: 300px;
+  border-radius: 10px;
+}
+
+.slide li:nth-child(1) {
+  right: 30px;
+}
+
+.slide li:nth-child(2) {
+  right: 50px;
+}
+.slide li:nth-child(3) {
+  right: 70px;
+}
+.slide li:nth-child(4) {
+  right: 90px;
+}
+
+.slide img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+
+/* ============ VITRINE DOS IMOVEIS ============ */
+
+#slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  align-items: center;
+  margin-right: 300px;
+  margin-top: 60px;
+  position: relative; 
+  margin-left: 360px;
+  
+}
+#slider li {
+  list-style: none;
+  position: absolute;
+}
+#slider img {
+  margin: auto;
+  height: 280px;
+  width: 580px;
+  vertical-align: top;
+  align-items: center;
+  display: flex;
+  align-content: center;
+
+}
+#slider input {
+  display: none;
+}
+#slider label {
+  background-color: black;
+  bottom: -20px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+  margin-left: 330px;
+  border-radius: 10px;
   
 }
 
-div#interface {
-  background-color: #ffff;
-  margin: 10px auto 5px auto;
-  padding-left: 120px;
-  padding-right: 120px;
-  
+#slider li:nth-child(1) {
+  right: 30px;
 }
 
-header {
-  border-bottom: 2px #2a9c52 solid;
-  padding: 5px;
+#slider li:nth-child(2) {
+  right: 50px;
 }
+#slider li:nth-child(3) {
+  right: 70px;
+}
+#slider li:nth-child(4) {
+  right: 90px;
+}
+
+#slider li:nth-child(5) {
+  right: 110px;
+  top: 1px;
+}
+
+#slider li:nth-child(6) {
+  right: 130px;
+  top: 1px;
+}
+
+#slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+  /* div#current img { TAMANHO DAS IMAGENS E IMAGENS
+   width: 900px;
+   width: 400px;
+}
+
+.slider {
+  width: 750px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.4s;
+
+
+}
+.container {
+  width: 1500px;
+}
+.imgs img{
+width: 700px;
+height: 350px;
+}
+
+#current {
+  margin-left: 0;
+  transition: all 2s;
+}
+
+div.button {
+  position: absolute;
+  color: blue;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-top: -5px;
+}
+
+.button:hover {
+  transform: scale(1.5);
+  }
+ 
+  #back {
+    top: 50%;
+    left: 10%;
+  }
+
+  #next {
+    top: 50%;
+    right: 10%;
+  }
+  .balls {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+  }
+ */
+/* =========== fim do  slide ========= */
+
+
+
 /* =====================CORPO/CABEÇALHO =================== */
 
-#imovel {
-text-align: center;
-margin-top: 50px;
-}
-
-#imovel h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#imoveis-container {
-  display: flex;
-  overflow-x: scroll;
-}
-
-#imoveis-container img {
-  margin-right: 10px;
-}
-
-div.container {
-  display: block;
-  float: initial;
-  columns: 3;
-}
 
 /* =======================CALL ACTION MEIO DA PÁGINA BOTÃO ================= */
 #call-to-action {
@@ -121,36 +290,30 @@ div.container {
 
 /* =================MENU ================= */
 
-#menu {
-  background-color: #adebbb;
-  
-  }
-
 nav#menu ul{
   
   display: block;
   text-transform: uppercase;
-  position: fixed;
-  top: 20px;
-  left: 500px;
+  position: absolute;
+  top: 40px;
+  left: 700px;
      
 }
 nav#menu li {
   display: inline-block;
-  font-size: 18pt;
-  margin-right: 10px;
+  font-size: 14pt;
+  margin-right: 5px;
    
 }
 
-a:hover {
+#menu a:hover {
   text-decoration: underline;
-  opacity: 5s;
+  opacity: 20s;
 
 }
 a {
   text-decoration: none;
   color: black;
-  background: #adebbb;
   padding: 5px;
   border-radius: 10px;
 }
@@ -164,10 +327,14 @@ a {
 }
 
 /* =================RODA PÉ ================= */
+
+
 #rodape {
   display: flex;
   flex-direction: row;
   height: fit-content;
+  color: #60D394;;
+  background-color: rgba(0, 0,0 , 0.4);
 }
 
 
