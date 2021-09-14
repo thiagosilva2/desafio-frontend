@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../static/css/style.css" rel="stylesheet" />
     <title>Imobiliaria</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        align-items: center;
+      }
+
+      /* Add your flexbox CSS below here */
+
+      section {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
   </head>
   <body>
-    <div id="interface">
-      <header>
-        <!-- ESSA PARTE VAI SER UM SLID COM OS DOIS BANNERS -->
-        <img id="logotopo" src="../static/img/logo_topo.png" />
-        <!-- MENU DA PÁGINA -->
-        <nav id="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Imóveis </a></li>
-            <li><a href="#"> Serviços</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div id="titulo"><h1>Melhores imóveis do Rio de Janeiro!</h1></div>
-      
+    <header>
+      <!-- ESSA PARTE VAI SER UM SLID COM OS DOIS BANNERS -->
+      <img id="logotopo" src="../static/img/logo_topo.png" />
+      <!-- MENU DA PÁGINA -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Imóveis </a></li>
+          <li><a href="#"> Serviços</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Melhores imóveis do Rio de Janeiro!</h1>
+
       <figure>
         <ul class="slide">
           <li>
@@ -48,104 +61,143 @@
         </ul>
       </figure>
 
-    <div id="titulo"> 
-      <h1>Venha conhecer a Imobiliária Inforce.</h1>
-      <h2>Vitrines de Imóveis</h2>
-    </div>
+      <h2 class="tituloh2">Venha conhecer a Imobiliária Inforce.</h2>
 
-      <ul id="slider">
+      <figure>
+        <ul id="slider">
+          <li>
+            <input type="radio" id="slider1" name="slider" checked />
+            <label id="button" for="slider1"></label>
+            <img src="../static/img/imovel1.jpg" />
+          </li>
 
-        <li> 
-          <input type="radio" id="slider1" name="slider" checked>
-          <label id="button" for="slider1"></label> 
-          <img src="../static/img/imovel1.jpg" />
-        </li>
+          <li>
+            <input type="radio" id="slider2" name="slider" checked />
+            <label id="button" for="slider2"></label>
+            <img src="../static/img/imovel2.jpg" />
+          </li>
 
-      <li>
-        <input type="radio" id="slider2" name="slider" checked>
-        <label id="button" for="slider2"></label> 
-        <img src="../static/img/imovel2.jpg" />  
-      </li>
+          <li>
+            <input type="radio" id="slider3" name="slider" checked />
+            <label id="button" for="slider3"></label>
+            <img src="../static/img/imovel3.jpg" />
+          </li>
 
-      <li>
-        <input type="radio" id="slider3" name="slider" checked>
-        <label id="button" for="slider3"></label> 
-        <img src="../static/img/imovel3.jpg" />
-     </li>
+          <li>
+            <input type="radio" id="slider4" name="slider" checked />
+            <label id="button" for="slider4"></label>
+            <img src="../static/img/imovel4.jpg" />
+          </li>
 
-      <li>
-        <input type="radio" id="slider4" name="slider" checked>
-        <label id="button" for="slider4"></label> 
-        <img src="../static/img/imovel4.jpg" />
-      </li>
+          <li>
+            <input type="radio" id="slider5" name="slider" checked />
+            <label id="button" for="slider5"></label>
+            <img src="../static/img/imovel5.jpg" />
+          </li>
 
-      <li>
-        <input type="radio" id="slider5" name="slider" checked>
-        <label id="button" for="slider5"></label> 
-        <img src="../static/img/imovel5.jpg" />
-              </li>
+          <li>
+            <input type="radio" id="slider6" name="slider" checked />
+            <label id="button" for="slider6"></label>
+            <img src="../static/img/imovel6.jpg" />
+          </li>
+        </ul>
+      </figure>
 
-              <li>
-                <input type="radio" id="slider6" name="slider" checked>
-                <label id="button" for="slider6"></label> 
-                <img src="../static/img/imovel6.jpg" />
-              </li>
-    </ul>
+      <div class="action">
+        <section id="call"><button>clique</button></section>
+        <p>
+          simply dummy text of the printing and typesetting indus..try. Lorem
+        </p>
       </div>
 
-      <section id="call-to-action">
-        <div>
-          <h3>ACTION</h3>
-          <p>
-            simply dummy text of the printing and typesetting indus..try. Lorem
-            Ipsum has been the industry's
-          </p>
-        </div>
+      <h1>Últimas Noticias</h1>
+      <section class="container">
+        <article class="container__article">
+          <div class="container__item">
+            <img src="../static/img/noticia1.jpg" />
+            <h3>Preço dos imóveis residenciais recua em setembro</h3>
+            <p>
+              No acumulado do ano e em 12 meses, os valores seguem com avanço
+              inferior à inflação
+            </p>
+          </div>
+
+          <div class="container__item">
+            <img src="../static/img/noticia2.jpg" />
+            <h3>
+              20% dos novos financiamentos de imóveis da Caixa já são pelo IPCA
+            </h3>
+            <p>
+              Lançada há um mês, modalidade é opcional e oferece juros de até
+              4,95% ao ano acrescidos da inflação no período.
+            </p>
+          </div>
+
+          <div class="container__item">
+            <img src="../static/img/noticia3.jpg" />
+            <h3>Compra e venda de imóveis têm alta de quase 6%</h3>
+            <p>
+              Entre julho do ano passado e junho de 2019, foram comprados e
+              vendidos cerca de 613 mil imóveis no estado.
+            </p>
+          </div>
+
+          <div class="container__item">
+            <img src="../static/img/noticia4.jpg" />
+            <h3>Risco de bolha imobiliária aumenta na zona do euro</h3>
+            <p>
+              Pela primeira vez em quatro anos, Londres não foi classificada
+              como uma cidade com imóveis perigosamente sobrevalorizado.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section id="imovel">
-        <h2>ultimas noticias</h2>
-        <div class="container">
-          <img src="../static/img/noticia1.jpg" />
-          <img src="../static/img/noticia2.jpg" />
-          <img src="../static/img/noticia3.jpg" />
-          <img src="../static/img/noticia4.jpg" />
+      <section class="container____item">
+        <div class="container___item">
+          <h2 class="container___title">Mais Acessados</h2>
+          <a href="#"> <strong>Apartamentos na Barra</strong> </a>
+          <a href="#"> <strong>Casas no Recreio</strong></a>
+          <a href="#"><strong> Barra da Tijuca</strong></a>
+          <a href="#"> <strong>Apartamento com 2 quartos</strong> </a>
+          <a href="#"><strong>Casa na Urca</strong> </a>
+          <a href="#"><strong> Humaita</strong></a>
         </div>
       </section>
+    </main>
 
-      <section id="mais-acessados">
-        <h2>mais acessados</h2>
-        <div>
-          <a href="#">apartamentos na barra</a>
-          <a href="#">casas no recreio</a>
-          <a href="#">barra da tijuca</a>
-          <a href="#">apartamento com 2 quartos</a>
-          <a href="#">casa na urca</a>
-          <a href="#">humaita</a>
-        </div>
-      </section>
-
-      <section id="localizacao">mapa</section>
-
-      <footer id="rodape">
+    <footer id="rodape">
+      <figure>
         <img id="logoFooter" src="../static/img/logo_footer.png" />
-        <li>
-          <h2>Footer Menu</h2>
-          <ul class="menuItens">
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-          </ul>
-        </li>
-        <li>
-          <h2>Footer Menu</h2>
-          <ul class="menuItens">
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-          </ul>
-        </li>
-      </footer>
-    </div>
-    </body>
+      </figure>
+      <li>
+        <h2>Menu</h2>
+        <ul class="menuItens">
+          <li>
+            <a href="#"> <strong>Alugar Casa</strong> </a>
+          </li>
+          <li>
+            <a href="#"><strong>Alugar Apartamento</strong> </a>
+          </li>
+          <li>
+            <a href="#"><strong>Outros</strong> </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>Contato:</h2>
+        <ul class="menuItens">
+          <li>
+            <a href="#"> <strong>Facebook</strong> </a>
+          </li>
+          <li>
+            <a href="#"><strong>Instagram</strong> </a>
+          </li>
+          <li>
+            <a href="#"><strong>Whatsapp</strong> </a>
+          </li>
+        </ul>
+      </li>
+    </footer>
+  </body>
 </html>
